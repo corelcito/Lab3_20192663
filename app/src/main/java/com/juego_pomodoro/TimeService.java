@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.Timer;
 
 public class TimeService extends Service {
-    private static final long WORK_TIME = 1 * 60 * 1000;
+    private static final long WORK_TIME = 5 * 60 * 1000;
     private static final long REST_TIME = 1 * 60 * 1000;
     private long timeLeftInMillisWork = WORK_TIME;
     private long timeLeftInMillisRest = REST_TIME;

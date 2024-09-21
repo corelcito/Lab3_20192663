@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
+//Intenté que los inputs dieran un error mas sencillo (cuando es vacio)
     private void tryLogin() {
         String username = edtUser.getText().toString().trim();
         String password = edtPassword.getText().toString().trim();
@@ -66,7 +66,9 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             tilPassword.setError(null);
         }
-
+//Solicté que con lo que me brindó en RequestLogin, ApiService y RetroFitClient funcionara el login
+        //Adicional con unos mensajes de error, porque las primeras versiones que me dio no funcionaban
+        //del todo correcto (logs de ayuda -> mensajes de error en pantalla)
         RequestLogin requestLogin = new RequestLogin();
         requestLogin.username = username;
         requestLogin.password = password;
