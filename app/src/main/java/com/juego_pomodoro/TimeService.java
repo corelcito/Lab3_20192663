@@ -11,8 +11,10 @@ import android.util.Log;
 import java.util.Timer;
 
 public class TimeService extends Service {
-    private static final long WORK_TIME = 5 * 60 * 1000;
-    private static final long REST_TIME = 1 * 60 * 1000;
+    //en mi caso por cuestiones practicas para probar el funcionamiento del timer probe con 1min cada uno
+    //para la revision de la entrega pueden cambiar esta seccion por el tiempo que deseen, para no esperar los 25min y se evidencie el dialog alert
+    private static final long WORK_TIME = 25 * 60 * 1000;
+    private static final long REST_TIME = 5 * 60 * 1000;
     private long timeLeftInMillisWork = WORK_TIME;
     private long timeLeftInMillisRest = REST_TIME;
     private CountDownTimer countDownTimer;

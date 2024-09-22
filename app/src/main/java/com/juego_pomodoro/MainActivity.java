@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             dialogWork.show();
         }
     }
-
+        //timer brindadio por chatGPT, de tal modo que este continue en funcionamiento pese a saltar o regresar en pantallas.
     private void updateTimerText(long timeLeftWork, long timeLeftRest, boolean isTimerRunning, boolean isWorking, boolean restInitDialog, boolean workInitDialog) {
         this.isTimerRunning = isTimerRunning;
         this.isWorking = isWorking;
